@@ -11,6 +11,7 @@ Essas instruções fornecerão uma cópia do projeto instalado e funcionando em 
 ### Pré-Requisitos
 
 Se você pretende rodar este projeto em um dispositivo físico, é preciso que a máquina que rodará o backend e o dispositivo onde o app será instalado estejam na mesma rede.
+
 É necessário ter o yarn instalado: https://classic.yarnpkg.com/lang/en/
 
 
@@ -38,7 +39,7 @@ Abra outro terminal e navegue até o folder interviewing-challenge/mobile e inst
 
 `yarn`
 
-Abra o arquivo mobile/src/services/api.js e edite o endereço da chave 'baseURL' para o IP da sua placa de rede
+Se for rodar o app em um dispositivo fixo, abra o arquivo mobile/src/services/api.js e edite o endereço da chave 'baseURL' para o IP da sua placa de rede
 
 ```
 import axios from 'axios';
@@ -50,6 +51,20 @@ const api = axios.create({
 
 export default api;
 ```
+
+Se for rodá-lo em um emulador, abra o arquivo mobile/src/services/api.js e edite o endereço da chave 'baseURL' conforme abaixo
+
+```
+import axios from 'axios';
+
+const api = axios.create({
+  baseURL: 'http://10.0.2.2:3333/',
+  timeout: 5000,
+});
+
+export default api;
+```
+
 
 Agora rode o app com o seguinte comando:
 
