@@ -2,20 +2,24 @@
 
 Este projeto foi desenvolvido como avaliação prática do processo seletivo para a vaga de Desenvolvedor Fullstack.
 
+
 ## Getting Started
 
 Essas instruções fornecerão uma cópia do projeto instalado e funcionando em sua máquina local para fins de desenvolvimento e teste.
+
 
 ### Pré-Requisitos
 
 Se você pretende rodar este projeto em um dispositivo físico, é preciso que a máquina que rodará o backend e o dispositivo onde o app será instalado estejam na mesma rede.
 É necessário ter o yarn instalado: https://classic.yarnpkg.com/lang/en/
 
+
 ### Instalação
 
 Primeiramente, abra o terminal em uma pasta de sua preferencia e clone este respositório.
 
 `git clone https://github.com/edilsonlm217/interviewing-challenge.git`
+
 
 #### Instalando e rodando o backend
 
@@ -26,6 +30,7 @@ Após clonar o repositório, navegue até a pasta backend, instale as dependenci
 3. `yarn dev`
 
 Não feche o terminal a menos que deseje parar o servidor.
+
 
 #### Instalando e rodando o mobile
 
